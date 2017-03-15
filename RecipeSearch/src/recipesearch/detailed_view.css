@@ -5,3 +5,12 @@
 .mainFxmlClass {
 
 }
+.mainColor {
+    -fx-background-color: #ddb4fd;
+    -fx-fill:#af47ff;
+}
+
+.paragrafText {
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+}

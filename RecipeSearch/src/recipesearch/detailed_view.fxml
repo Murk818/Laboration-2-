@@ -11,53 +11,53 @@
 
 <AnchorPane id="AnchorPane" fx:id="instructionsPane" prefHeight="300.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recipesearch.Detailed_viewController">
     <stylesheets>
-        <URL value="@detailed_view.css" />
+        <URL value="@Laboration-2-/RecipeSearch/src/recipesearch/detailed_view.css" />
     </stylesheets>
    <children>
-      <ScrollPane prefHeight="350.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="350.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="585.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="585.0" styleClass="mainColor" stylesheets="@detailed_view.css">
                <children>
                   <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="180.0" prefWidth="180.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
                      <children>
-                        <ImageView fx:id="recipeImage" fitHeight="180.0" fitWidth="180.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0" />
+                        <ImageView fx:id="recipeImage" fitHeight="180.0" fitWidth="180.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-16.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="235.0" layoutY="28.0" prefHeight="200.0" prefWidth="330.0" AnchorPane.rightAnchor="20.0">
+                  <AnchorPane layoutX="238.0" layoutY="28.0" prefHeight="200.0" prefWidth="330.0" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="28.0">
                      <children>
-                        <Text fx:id="descriptionField" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="beskrivnign" AnchorPane.leftAnchor="5.0" />
-                        <Text fx:id="titleField" fill="#251dff" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titel:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="14.1015625">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Text>
+                        <Text fx:id="descriptionField" layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="paragrafText" text="beskrivnign" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.05078125" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="14.0" layoutY="214.0" prefHeight="370.0" prefWidth="180.0" AnchorPane.leftAnchor="20.0">
                      <children>
-                        <Text fx:id="portionsField" layoutX="7.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Portioner:" AnchorPane.leftAnchor="7.0" />
-                        <Text fill="#251dff" layoutX="7.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredienser:" AnchorPane.leftAnchor="7.0">
+                        <Text fx:id="portionsField" layoutX="7.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="paragrafText" text="Portioner:" AnchorPane.leftAnchor="7.0" />
+                        <Text fill="#251dff" layoutX="7.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="mainColor" text="Ingredienser:" AnchorPane.leftAnchor="7.0">
                            <font>
                               <Font size="21.0" />
                            </font>
                         </Text>
-                        <Text fx:id="ingredientsField" layoutX="7.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info:" AnchorPane.leftAnchor="7.0" />
+                        <Text fx:id="ingredientsField" layoutX="7.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="paragrafText" text="Info:" AnchorPane.leftAnchor="7.0" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="instructionsPane" layoutX="238.0" layoutY="214.0" prefHeight="370.0" prefWidth="330.0" AnchorPane.rightAnchor="20.0">
+                  <AnchorPane fx:id="instructionsPane" layoutX="238.0" layoutY="214.0" prefHeight="370.0" prefWidth="330.0" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="214.0">
                      <children>
-                        <Text fill="#251dff" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gör så här : " AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                        <Text fill="#251dff" layoutX="5.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="mainColor" text="Gör så här : " AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="13.763671875">
                            <font>
                               <Font size="23.0" />
                            </font>
                         </Text>
-                        <Text fx:id="instructionsField" layoutX="3.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info:" AnchorPane.leftAnchor="5.0" />
+                        <Text fx:id="instructionsField" layoutX="5.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="paragrafText" text="Info:" AnchorPane.leftAnchor="5.0" />
                      </children>
                   </AnchorPane>
+                  <Button fx:id="backBtn" layoutY="2.0" minWidth="70.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="43.0" text="&lt;- Back" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0" />
+                  <Text fx:id="titleField" fill="#991fff" layoutX="107.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="mainColor" text="Titel:" AnchorPane.leftAnchor="107.0" AnchorPane.topAnchor="-3.8984375">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
         </content>
       </ScrollPane>
-      <Button fx:id="backBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="43.0" text="Back" />
    </children>
 </AnchorPane>

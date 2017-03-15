@@ -14,4 +14,54 @@
 	-fx-background-color:#af47ff;
 	-fx-fill:#ddb4fd;
 }
+.resultTable{
+   -fx-background-color: transparent;
+}
 
+.resultTable:focused{
+    -fx-background-color: transparent;
+}
+
+.resultTable.column-header-background{
+    -fx-background-color:#af47ff ;
+}
+
+.resultTable.column-header-background.label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.resultTable.column-header {
+    -fx-background-color: transparent;
+}
+
+.resultTable.table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #ddb4fd;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, f3f3f3;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #af47ff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+    -fx-font-weight:bold;
+}
+
+
+
+
+.resultTable > .virtual-flow > .scroll-bar > .increment-button, 
+.resultTable > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
