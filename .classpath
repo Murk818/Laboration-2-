@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="RecipeSearch/src"/>
+	<classpathentry kind="lib" path="lab2-backend.jar"/>
+	<classpathentry kind="lib" path="RecipeSearch/dist/RecipeSearch.jar"/>
+	<classpathentry kind="lib" path="RecipeSearch/dist/run948720755/RecipeSearch.jar"/>
+	<classpathentry kind="lib" path="RecipeSearch/lib/lab2-backend.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="RecipeSearch/build/classes"/>
+</classpath>

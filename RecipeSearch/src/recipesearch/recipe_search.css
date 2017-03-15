@@ -1,0 +1,15 @@
+.pane-background {
+    -fx-background-color: -fx-background;
+}
+
+#pane1{
+    -fx-background-color: #F00;
+}
+
+#pane2{
+    -fx-background-color: #0F0;
+}
+
+#pane3{
+    -fx-background-color: #00F;
+}
