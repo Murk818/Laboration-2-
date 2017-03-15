@@ -14,7 +14,7 @@
         <URL value="@detailed_view.css" />
     </stylesheets>
    <children>
-      <ScrollPane prefHeight="350.0" prefWidth="600.0">
+      <ScrollPane prefHeight="350.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="585.0">
                <children>
@@ -54,10 +54,10 @@
                         <Text fx:id="instructionsField" layoutX="3.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info:" AnchorPane.leftAnchor="5.0" />
                      </children>
                   </AnchorPane>
-                  <Button fx:id="backBtn" layoutY="2.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="43.0" text="Back" />
                </children>
             </AnchorPane>
         </content>
       </ScrollPane>
+      <Button fx:id="backBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="43.0" text="Back" />
    </children>
 </AnchorPane>

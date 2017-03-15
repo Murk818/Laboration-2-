@@ -5,3 +5,13 @@
 .mainFxmlClass {
 
 }
+.basecolor{
+	-fx-background-color:#ddb4fd;
+	-fx-fill:#ddb4fd;
+	
+}
+.hardcolor{
+	-fx-background-color:#af47ff;
+	-fx-fill:#ddb4fd;
+}
+
