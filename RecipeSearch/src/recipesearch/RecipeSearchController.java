@@ -60,8 +60,6 @@ public class RecipeSearchController implements Initializable {
     }   
     public void search(List<Object> keywords){
         List<Recipe> recipes = db.search(new SearchFilter((String)keywords.get(0), 0, (String)keywords.get(1), (Integer)keywords.get(2), (String)keywords.get(3)));
-        searchresult_viewController.searchViewUpdate(keywords, recipes);
-        searchresult_view.toFront();
-        searchresult_view.setVisible(true);
+
     }
 }

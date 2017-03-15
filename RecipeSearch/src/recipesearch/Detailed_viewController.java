@@ -8,11 +8,16 @@ package recipesearch;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import se.chalmers.ait.dat215.lab2.Ingredient;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
@@ -23,7 +28,8 @@ import se.chalmers.ait.dat215.lab2.Recipe;
  */
 public class Detailed_viewController implements Initializable {
 
-    
+    @FXML
+    private Button backBtn;
     @FXML
     private ImageView recipeImage;
     @FXML
@@ -52,6 +58,7 @@ public class Detailed_viewController implements Initializable {
         descriptionField.setWrappingWidth(350);
         instructionsField.setWrappingWidth(350);
         ingredientsField.setWrappingWidth(190);
+        backBtn.setOnAction(e-> backToSearch());
     } 
     public void injectMainController(RecipeSearchController main){
         recipeSearchController = main;
@@ -77,6 +84,12 @@ public class Detailed_viewController implements Initializable {
             list = i.getAmount() + " " + i.getUnit() + " - " + i.getName() + "\n";
         }
         return list;
+    }
+    private void backToSearch(){
+    	System.out.println("backToSearch");
+    	recipeSearchController.detailed_view.setVisible(false);
+    	recipeSearchController.searchresult_view.setVisible(true);
+        recipeSearchController.detailed_view.toFront();
     }
     
 }
