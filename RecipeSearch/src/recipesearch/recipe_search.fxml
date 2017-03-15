@@ -24,5 +24,11 @@
           </Menu>
         </menus>
       </MenuBar>
+      <StackPane fx:id="stackPane" layoutY="30.0" prefHeight="370.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <fx:include fx:id="searchresult_view" source="searchresult_view.fxml" />
+            <fx:include fx:id="detailed_view" source="detailed_view.fxml" />
+         </children>
+      </StackPane>
    </children>
 </AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="instructionsPane" prefHeight="300.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recipesearch.Detailed_viewController">
+    <stylesheets>
+        <URL value="@detailed_view.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane prefHeight="350.0" prefWidth="600.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="585.0">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="180.0" prefWidth="180.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <ImageView fx:id="recipeImage" fitHeight="180.0" fitWidth="180.0" layoutX="-4.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="238.0" layoutY="14.0" prefHeight="200.0" prefWidth="330.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Text fx:id="descriptionField" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="beskrivnign" AnchorPane.leftAnchor="5.0" />
+                        <Text fx:id="titleField" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titel:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="214.0" prefHeight="370.0" prefWidth="180.0" AnchorPane.leftAnchor="20.0">
+                     <children>
+                        <Text fx:id="portionsField" layoutX="10.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Portioner:" AnchorPane.leftAnchor="10.0" />
+                        <Text layoutX="10.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredieser" AnchorPane.leftAnchor="10.0">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="ingredientsField" layoutX="14.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info:" AnchorPane.leftAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="instructionsPane" layoutX="238.0" layoutY="214.0" prefHeight="370.0" prefWidth="330.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gör så här : " AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="instructionsField" layoutX="3.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info:" AnchorPane.leftAnchor="5.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
